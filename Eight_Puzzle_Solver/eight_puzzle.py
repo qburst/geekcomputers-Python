@@ -382,15 +382,8 @@ def toWord(action):
     Parameters: List of moves
     Returns: Returns List of moves in Word
     """
-    if action == 0:
-        return "Left"
-    if action == 1:
-        return "Right"
-    if action == 2:
-        return "Top"
-    if action == 3:
-        return "Bottom"
-
+    action_list = ["Left", "Right", "Top", "Bottom"]
+    return action_list[action]
 
 # initialState =  [[1,8,4],[3,6,0],[2,7,5]]
 # # [[1,2,3],[4,5,6],[0,7,8]]
